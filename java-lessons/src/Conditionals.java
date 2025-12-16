@@ -72,7 +72,7 @@ public class Conditionals {
             System.out.println("Enter password: ");
             String pass_input = input.nextLine();
 
-            if (pass_input.equals(pass_input)) {
+            if (pass_input.equals(password)) {
                 System.out.println("You have been granted access!");
             } else {
                 System.out.println("You have not been granted access!");
@@ -90,7 +90,19 @@ public class Conditionals {
             //challenge 3
             System.out.println("Enter grade (0-100): ");
             double int_grade = Integer.parseInt(input.nextLine());
-            
+            if (int_grade >= 90 && int_grade <= 100) {
+                System.out.println("A");
+            } else if (int_grade >=80 && int_grade <90 ) {
+                System.out.println("B");
+            } else if (int_grade >=70 && int_grade <80 ) {
+                System.out.println("C");
+            } else if (int_grade >=60 && int_grade <70 ) {
+                System.out.println("D");
+            } else if (int_grade >=0 && int_grade <60 ) {
+                System.out.println("F");
+            } else {
+                System.out.println("Enter a valid grade");
+            }
 
 
             
