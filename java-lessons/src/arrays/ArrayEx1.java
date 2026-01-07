@@ -20,7 +20,7 @@ public class ArrayEx1 {
         byte[] values = new byte[10];
 
         for (int i = 0; i < values.length; i++) {
-            values[i] = (byte)(1);
+            values[i] = 1;
             System.out.println(values[i]);
         }
 
