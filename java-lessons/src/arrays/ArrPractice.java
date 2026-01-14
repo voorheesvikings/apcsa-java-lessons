@@ -9,8 +9,8 @@ public class ArrPractice {
             number[i] = 4;
         }
 
-        int[] arr = {2, 4, 6, 8, 10, 12};
-        if (arr.length % 2 == 1) {
+        int[] arr = {2, 4, 6, 8, 10, 12}; 
+        if (arr.length % 2 == 1) {  
             System.out.println(arr[arr.length / 2]);
         } else {
             System.out.println(arr[(arr.length / 2)]);
