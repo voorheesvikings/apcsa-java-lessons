@@ -5,15 +5,32 @@ import java.util.Random;
 public class TwoDArrChallenge {
     public static void main(String[] args) {
         Random random = new Random();
-
+        int x_count = 0;
+        int o_count = 0;
         char[][] tictactoe = new char[3][3];
         for (int i = 0; i < tictactoe.length; i++) {
             for (int j = 0; j < tictactoe[i].length; j++) {
 
+
                 if (random.nextBoolean()) {
-                    tictactoe[i][j] = 'X';
+                    if (x_count > 4) {
+                        tictactoe[i][j] = 'O';
+                        o_count++;
+                        continue;
+                    } else {
+                        tictactoe[i][j] = 'X';
+                        x_count++;
+                    }
                 } else {
-                    tictactoe[i][j] = 'O';
+                    if (o_count >= x_count) {
+                        tictactoe[i][j] = 'X';
+                        x_count++;
+                        continue;
+                    } else {
+                        tictactoe[i][j] = 'O';
+                        o_count++;
+                    }
+                    
                 }
 
                 if (j == 2 && tictactoe[i][j] == tictactoe[i][j-1] && tictactoe[i][j] == tictactoe[i][j-2]) {
