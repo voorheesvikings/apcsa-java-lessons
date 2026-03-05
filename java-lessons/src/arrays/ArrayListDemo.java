@@ -1,9 +1,7 @@
 package arrays;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Arrays;
 import java.util.Scanner;
 public class ArrayListDemo {
 
@@ -77,7 +75,7 @@ public class ArrayListDemo {
 
 
         while (true) {
-            System.out.print("Enter a name (or 'exit' to stop): ");
+            System.out.print("Enter a name (exit to stop): ");
             String name = input.nextLine();
             if (name.equals("exit")) {
                 break;
